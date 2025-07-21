@@ -68,7 +68,7 @@ export default function HomeClient({ initialMovies }: HomeClientProps) {
             </Button>
 
             <Button variant="outline" className="border-white" asChild>
-              <Link href="/filmes/novo">Adicionar Filme</Link>
+              <Link href="/novo">Adicionar Filme</Link>
             </Button>
           </div>
         </div>
@@ -128,7 +128,7 @@ export default function HomeClient({ initialMovies }: HomeClientProps) {
                     </div>
                     <div className="mt-4 flex space-x-2">
                       <Button asChild className="bg-blue-500 text-white">
-                        <Link href={`/filmes/editar/${movie.id}`}>Editar</Link>
+                        <Link href={`/${movie.id}/editar`}>Editar</Link>
                       </Button>
                       <Button
                         variant="destructive"
