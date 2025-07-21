@@ -80,12 +80,13 @@ export default function AdicionarFilme() {
   }
 
   return (
-    <main className="max-w-xl mx-auto p-6">
-      <h1 className="text-3xl font-bold mb-6">Cadastrar Novo Filme</h1>
+    <main className="max-w-xl mx-auto p-6 mt-10 bg-[#1e1e2f] rounded-lg shadow-md text-white">
+      <h1 className="text-3xl font-bold mb-6 text-white">Cadastrar Novo Filme</h1>
       <form onSubmit={onSubmit} className="space-y-4">
         <div>
-          <Label htmlFor="title">Título</Label>
+          <Label htmlFor="title" className="text-gray-300">Título</Label>
           <Input
+            className="bg-[#2b2b3d] text-white border border-gray-600 focus:ring-2 focus:ring-blue-500"
             id="title"
             name="title"
             value={form.title}
@@ -95,8 +96,9 @@ export default function AdicionarFilme() {
         </div>
 
         <div>
-          <Label htmlFor="year">Ano</Label>
+          <Label htmlFor="year" className="text-gray-300">Ano</Label>
           <Input
+            className="bg-[#2b2b3d] text-white border border-gray-600 focus:ring-2 focus:ring-blue-500"
             id="year"
             name="year"
             type="number"
@@ -107,8 +109,9 @@ export default function AdicionarFilme() {
         </div>
 
         <div>
-          <Label htmlFor="genre">Gênero</Label>
+          <Label htmlFor="genre" className="text-gray-300">Gênero</Label>
           <Input
+            className="bg-[#2b2b3d] text-white border border-gray-600 focus:ring-2 focus:ring-blue-500"
             id="genre"
             name="genre"
             value={form.genre}
@@ -118,8 +121,9 @@ export default function AdicionarFilme() {
         </div>
 
         <div>
-          <Label htmlFor="duration">Duração</Label>
+          <Label htmlFor="duration" className="text-gray-300">Duração</Label>
           <Input
+            className="bg-[#2b2b3d] text-white border border-gray-600 focus:ring-2 focus:ring-blue-500"
             id="duration"
             name="duration"
             value={form.duration}
@@ -129,8 +133,9 @@ export default function AdicionarFilme() {
         </div>
 
         <div>
-          <Label htmlFor="poster">Poster (URL)</Label>
+          <Label htmlFor="poster" className="text-gray-300">Poster (URL)</Label>
           <Input
+            className="bg-[#2b2b3d] text-white border border-gray-600 focus:ring-2 focus:ring-blue-500"
             id="poster"
             name="poster"
             type="url"
@@ -141,8 +146,9 @@ export default function AdicionarFilme() {
         </div>
 
         <div>
-          <Label htmlFor="description">Descrição</Label>
+          <Label htmlFor="description" className="text-gray-300">Descrição</Label>
           <Textarea
+            className="bg-[#2b2b3d] text-white border border-gray-600 focus:ring-2 focus:ring-blue-500"
             id="description"
             name="description"
             value={form.description}
@@ -153,8 +159,9 @@ export default function AdicionarFilme() {
         </div>
 
         <div>
-          <Label htmlFor="rating">Nota (0 a 10)</Label>
+          <Label htmlFor="rating" className="text-gray-300">Nota (0 a 5)</Label>
           <Input
+            className="bg-[#2b2b3d] text-white border border-gray-600 focus:ring-2 focus:ring-blue-500"
             id="rating"
             name="rating"
             type="number"
@@ -167,7 +174,10 @@ export default function AdicionarFilme() {
           />
         </div>
 
-        <Button type="submit" className="mt-4">
+        <Button
+          type="submit"
+          className="mt-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold"
+        >
           Adicionar Filme
         </Button>
       </form>

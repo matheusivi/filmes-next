@@ -2,7 +2,7 @@
 import { prisma } from "@/lib/prisma";
 import { NextRequest, NextResponse } from "next/server";
 
-// GET /api/filmes
+
 export async function GET(): Promise<NextResponse> {
   try {
     const filmes = await prisma.movie.findMany();
@@ -16,7 +16,7 @@ export async function GET(): Promise<NextResponse> {
   }
 }
 
-// POST /api/filmes
+
 export async function POST(req: NextRequest): Promise<NextResponse> {
   try {
     const data = await req.json();

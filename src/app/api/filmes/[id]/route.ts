@@ -7,7 +7,7 @@ interface Params {
   };
 }
 
-// GET /api/movie/[id]
+
 export async function GET(
   req: NextRequest,
   { params }: Params
@@ -32,7 +32,7 @@ export async function GET(
   }
 }
 
-// PUT /api/movie/[id]
+
 export async function PUT(
   req: NextRequest,
   { params }: Params
@@ -63,7 +63,7 @@ export async function PUT(
   }
 }
 
-// DELETE /api/movie/[id]
+
 export async function DELETE(
   req: NextRequest,
   { params }: Params
