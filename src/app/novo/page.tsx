@@ -37,7 +37,7 @@ export default function AdicionarFilme() {
       !form.description ||
       !form.rating
     ) {
-      alert("Por favor, preencha todos os campos.");
+      alert("Por favor, preencha todos os campos!.");
       return;
     }
 
